@@ -1,17 +1,19 @@
 <script>
-    let props = $props()
-    let count = $state(props.initialCount)
-    let doubled = $derived(count* 2)
+    let { initialCount }= $props();
 
-    console.log("hello world")
+    // let count = $state(initialCount);
+    let doubled = $derived(initialCount* 2)
+
+
 </script>
 
 
 <h3>Clicks counter</h3>
 
-
-<button on:click={() => count++}>
-    clicks: {count}
+  
+<button onclick={() => count++}>
+    Clicks: {initialCount}
 </button>
 
 <span> doubled is {doubled} </span>
+
