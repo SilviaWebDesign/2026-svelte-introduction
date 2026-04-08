@@ -1,5 +1,5 @@
 <script>
-    let { initialCount: count = $bindable}= $props();
+    let { initialCount: count = $bindable()}= $props();
 
     // let count = $state(initialCount);
     let doubled = $derived(count* 2)
