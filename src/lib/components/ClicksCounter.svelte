@@ -11,7 +11,7 @@
 <h3>Clicks counter</h3>
 
   
-<button onclick={() => count++}>
+<button onclick={() => initialCount++}>
     Clicks: {initialCount}
 </button>
 
